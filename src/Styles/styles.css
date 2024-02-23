@@ -1,0 +1,215 @@
+ :root {
+   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+   line-height: 1.5;
+   font-weight: 400;
+   text-align: center;
+   color-scheme: light dark;
+   color: rgba(255, 255, 255, 0.87);
+   background-color: #242424;
+   font-synthesis: none;
+   text-rendering: optimizeLegibility;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+ }
+
+ a {
+   font-weight: 500;
+   color: #646cff;
+   text-decoration: inherit;
+ }
+
+ a:hover {
+   color: #535bf2;
+ }
+
+ body {
+   margin: 0;
+   place-items: center;
+   min-width: 320px;
+   min-height: 100vh;
+   max-height: auto;
+   overflow-y: scroll;
+   background-color: #000;
+ }
+
+ h1 {
+   font-size: 3.2em;
+   line-height: 1.1;
+ }
+
+ p {
+   color: #ffffff;
+ }
+
+ button {
+   border-radius: 8px;
+   border: 1px solid transparent;
+   padding: 0.6em 1.2em;
+   font-size: 1em;
+   font-weight: 500;
+   font-family: inherit;
+   background-color: #1a1a1a;
+   cursor: pointer;
+   transition: border-color 0.25s;
+ }
+
+ button:hover {
+   border-color: #646cff;
+ }
+
+ button:focus,
+ button:focus-visible {
+   outline: 4px auto -webkit-focus-ring-color;
+ }
+
+ @media (prefers-color-scheme: light) {
+   :root {
+     color: #213547;
+     background-color: #ffffff;
+   }
+
+   a:hover {
+     color: #747bff;
+   }
+
+   button {
+     background-color: #f9f9f9;
+   }
+ }
+
+
+ /* import csv */
+ .file-upload-container {
+   width: 300px;
+   padding: 20px;
+   border: 2px solid #ccc;
+   border-radius: 20px;
+   background-color: #fff;
+   margin-left: 25%;
+ }
+
+ .file-info {
+   display: flex;
+   align-items: center;
+ }
+
+
+ .file-upload-header {
+   display: flex;
+   align-items: center;
+ }
+
+ .file-input {
+   display: none;
+ }
+
+ .file-upload-button {
+   display: inline-block;
+   width: 60px;
+   height: 60px;
+   border: 2px solid #ccc;
+   border-radius: 50%;
+   cursor: pointer;
+   overflow: hidden;
+   margin-right: 10px;
+   background-color: #007bff;
+ }
+
+ .file-name {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   text-align: center;
+   padding: 5px;
+   background-color: rgba(255, 255, 255, 0.8);
+ }
+
+ .file-upload-icon {
+   display: block;
+   font-size: 40px;
+   line-height: 50px;
+   text-align: center;
+   color: #ffffff;
+ }
+
+ button {
+   display: inline;
+   width: 50%;
+   padding: 10px;
+   margin-top: 10px;
+   background-color: #007bff;
+   color: #fff;
+   border: none;
+   border-radius: 20px;
+   cursor: pointer;
+ }
+
+ button:disabled {
+   opacity: 0.5;
+   cursor: not-allowed;
+ }
+
+ .delete-button {
+   margin-left: 70%;
+   background-color: transparent;
+   border: none;
+   color: red;
+   cursor: pointer;
+   width: 5% !important;
+ }
+
+ .disabled-button {
+   background-color: gray;
+   color: white;
+   cursor: not-allowed;
+ }
+
+ /* app */
+
+ .app-container {
+   display: flex;
+   align-items: center;
+   min-height: 100vh;
+   background-color: #000;
+ }
+
+ .left-section {
+   flex: 0 0 25%;
+   padding: 20px;
+ }
+
+ .right-section {
+   flex: 1;
+   padding: 20px;
+ }
+
+
+ /*ListingsInformation: table*/
+ .partners-table {
+   width: 60%;
+   border-collapse: collapse;
+   margin: 0 auto;
+   background-color: #ddd;
+ 
+ }
+
+ .partners-table th,
+ .partners-table td {
+   border: 1px solid #ddd;
+   padding: 8px;
+ }
+
+ .partners-table th {
+   background-color: #bbb;
+   color: #000;
+ }
+
+ .partners-table tr:nth-child(even) {
+   background-color: #f2f2f2;
+ }
+
+ .partners-table tr:hover {
+   color: #ffffff;
+   background-color: #007bff;
+ }

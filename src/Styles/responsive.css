@@ -1,0 +1,32 @@
+/* responsive.css */
+
+/* Estilos específicos para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    .file-upload-container {
+      width: 90%;
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+  
+    .left-section,
+    .right-section {
+      padding: 10px;
+    }
+  
+    .partners-table {
+      width: 90%;
+    }
+  
+    .file-upload-button,
+    button {
+      width: 95%;
+    }
+  
+    .delete-button {
+      margin-top: 10px;
+      width: 5%;
+      margin-left: 50%;
+    }
+  }
+  
